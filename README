@@ -1,0 +1,21 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1191
+
+Provides word count for manuscripts (essay or story documents), compliant with standard author rules (such as Strunk & White style lexicon for English grammar).
+
+Standard word count utilities (like unix 'wc') do not provide an accurate count because they count breaks between words.  In fiction writing, some sentences--like this one--have more words than breaks between words..
+
+To use, install and type :WC
+
+Line ranges are supported.
+
+To count the lines of a particular section of a document, insert a new line with 8 dashes, and the count will stop at that line.
+--------
+Like that.
+
+The word count also ignores the common author mark for section breaks using asterisk as shown below.
+ 
+* * * 
+
+This script is based on the sed 'wc' example provided in the GNU info pages; the algorithm replaces each whitespace seperated word by a single character and then counts the length of the string.
+
+
